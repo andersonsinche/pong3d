@@ -3,7 +3,7 @@ import * as THREE from 'three'
 
 class pelota extends objectTables{
 
-    constructor(radio, aceleration){
+    constructor(radio, aceleration, x, y){
         super({})
         this.radio = radio;
         this.acelerationX = aceleration;
@@ -12,7 +12,7 @@ class pelota extends objectTables{
         this.material = new THREE.MeshStandardMaterial({color:0xeeeeee});
         this.pelotaObject = new THREE.Mesh( this.geometry, this.material );
         this.objectListeners = [];
-        this.pelotaObject.position.set(0,0,0.2)
+        this.pelotaObject.position.set(x,y,0.2)
         this.setOptions({
             X : this.pelotaObject.position.x,
             Y : this.pelotaObject.position.y,

@@ -17,8 +17,8 @@ class mesa{
 
     }
 
-    addPelota(){
-        const objPelota = new pelota(0.2,0.05);
+    addPelota(x, y){
+        const objPelota = new pelota(0.2,0.05, x, y);
         this.addObjects(objPelota);
     }
 

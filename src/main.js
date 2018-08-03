@@ -23,7 +23,9 @@ light.position.set(5, 6, 8 );
 scene.add( light );
 
 var mesaObj = new mesa(20,10,scene);
-mesaObj.addPelota();
+mesaObj.addPelota(0,2);
+mesaObj.addPelota(2,0);
+
 
 function animate() {
 	requestAnimationFrame( animate );
