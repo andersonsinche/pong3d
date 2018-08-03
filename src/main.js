@@ -22,7 +22,7 @@ var light = new THREE.PointLight( );
 light.position.set(5, 6, 8 );
 scene.add( light );
 
-var mesaObj = new mesa(10,10,scene);
+var mesaObj = new mesa(20,10,scene);
 mesaObj.addPelota();
 
 function animate() {

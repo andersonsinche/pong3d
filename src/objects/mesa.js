@@ -29,17 +29,17 @@ class mesa{
 
     draw(){
         for(var obj in this.objectListeners){
-            if (this.objectListeners[obj].X > 12 ){
+            if (this.objectListeners[obj].X > this.ancho/2 ){
                 this.objectListeners[obj].crushX();
             }
-            else if (this.objectListeners[obj].X< -12){
+            else if (this.objectListeners[obj].X< this.ancho/2*-1){
                 this.objectListeners[obj].crushX();
             }
 
-            if (this.objectListeners[obj].Y > 5){
+            if (this.objectListeners[obj].Y > this.largo/2){
                 this.objectListeners[obj].crushY();
             }
-            else if (this.objectListeners[obj].Y <-5){
+            else if (this.objectListeners[obj].Y <this.largo/2*-1){
                 this.objectListeners[obj].crushY();
             }
             this.objectListeners[obj].draw();
